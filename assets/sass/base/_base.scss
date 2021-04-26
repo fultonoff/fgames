@@ -1,0 +1,36 @@
+//COLORS
+
+$black: #1b1b1b;
+$black-light: #323232;
+
+$orange: #fc6e20;
+
+$yello-light: #ffe7d0;
+
+$white: #ffffff;
+
+*,
+::before,
+::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+    @media only screen and (max-width: 48em){
+        
+    }
+}
+
+body{
+    font-family: 'Mulish', sans-serif;
+}
+
+.trans{
+    transition: all .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
