@@ -799,9 +799,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: linear-gradient(47deg, #FBAB7E, #F7CE68), url(/assets/img/bg.jpg);
+  background: linear-gradient(47deg, #0000006b, #00000067), url(/assets/img/bg.jpg);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
 .system__tittle {
@@ -811,10 +812,12 @@ body {
 
 .system__tittle h1 {
   font-weight: 200;
+  color: #ffffff;
 }
 
 .system__tittle span {
   font-size: 5rem;
+  color: #ffffff;
 }
 
 .system__content {
@@ -854,7 +857,7 @@ body {
 }
 
 .system__content .box__text ul h1 {
-  color: #A32620;
+  color: #1b1b1b;
 }
 
 .system__content .box__text ul li {
