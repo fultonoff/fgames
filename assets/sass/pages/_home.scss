@@ -1,0 +1,15 @@
+.feature{
+    padding: 5rem 0;
+    text-align: center;
+
+    &__tittle{
+        font-size: 4rem;
+        font-weight: 700;
+    }
+
+    &__description{
+        font-size: 1.5rem;
+        color: $black;
+        margin-top: 2rem;
+    }
+}

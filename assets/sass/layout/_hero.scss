@@ -1,54 +1,87 @@
 .hero{
-    height: 100vh;
-    background: linear-gradient(45deg, #000, transparent), url(/img/RtdV74302.jpeg);
+   
+    background: linear-gradient(45deg, rgb(0, 0, 0), rgba(0, 0, 0, 0)), url(/assets/img/BrinyJarl122803-scaled.jpeg);
     background-size: cover;
     background-position: center;
-
-
 
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    
+    &__content{
+        max-width: 140rem;
+        display: flex;
+        flex-wrap:wrap;
+        margin: 0 auto;
 
-    &__text{
-        text-align: center;
 
-        &>*{
-            text-transform: uppercase;
-            display: block;
+        .img{
+            // height: 300px;
+            // width: 300px;
+            flex: 10%;
+            @media only screen and (max-width: 48em){
+                display: none;
+                width: 0px;
+                flex: 0;
+            }
+            
+
+            img{
+                width: 100%;
+                visibility: hidden;
+                
+            
+            }
+        }
+
+        .text{
+            flex: 1;
             color: $white;
-        }
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            margin: 10rem 0;
 
-        .text-1{
-            font-size: 7rem;
-            
-            font-weight: 800;
             
             
-        }
 
-        .text-2{
-            font-size: 5rem;
-            font-weight: 600;
-           
-           
-            
+            &__1{
+                font-size: 5rem;
+                font-weight: 800;
+                text-transform: uppercase;
+                display: block;
+                
+            }
+
+            &__2{
+                font-size: 2rem;
+                font-weight: 800;
+                text-transform: uppercase;
+                display: block;
+                margin-top: 2rem;
+            }
+
+            .btn{
+                padding: 2rem 4rem;
+                background-color: $red;
+                align-self: flex-start;
+                margin-top: 3rem;
+                color: $white;
+                text-decoration: none;
+                font-size: 2rem;
+                transition:  transform .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+                &:hover{
+                    transform: translateX(4px);
+                }
+                &:active{
+                    transform: translateY(4px);
+                }
+            }
         }
     }
 
-    &__btn{
-        padding:2rem 4rem;
-        background-color: $orange;
-        border: none;
 
-        a{
-            padding: 1rem 2rem;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-family: inherit;
-            color: $white;
-            font-weight: 800;
-        }
-    }
+
+
 }

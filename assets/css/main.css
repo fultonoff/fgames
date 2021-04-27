@@ -22,8 +22,7 @@ body {
 }
 
 .hero {
-  height: 100vh;
-  background: linear-gradient(45deg, #000, transparent), url(/img/RtdV74302.jpeg);
+  background: linear-gradient(45deg, black, rgba(0, 0, 0, 0)), url(/assets/img/BrinyJarl122803-scaled.jpeg);
   background-size: cover;
   background-position: center;
   display: -webkit-box;
@@ -35,45 +34,94 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.hero__content {
+  max-width: 140rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.hero__content .img {
+  -webkit-box-flex: 10%;
+      -ms-flex: 10%;
+          flex: 10%;
+}
+
+@media only screen and (max-width: 48em) {
+  .hero__content .img {
+    display: none;
+    width: 0px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0;
+            flex: 0;
+  }
+}
+
+.hero__content .img img {
+  width: 100%;
+  visibility: hidden;
+}
+
+.hero__content .text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: 10rem 0;
 }
 
-.hero__text {
-  text-align: center;
-}
-
-.hero__text > * {
+.hero__content .text__1 {
+  font-size: 5rem;
+  font-weight: 800;
   text-transform: uppercase;
   display: block;
-  color: #ffffff;
 }
 
-.hero__text .text-1 {
-  font-size: 7rem;
+.hero__content .text__2 {
+  font-size: 2rem;
   font-weight: 800;
-}
-
-.hero__text .text-2 {
-  font-size: 5rem;
-  font-weight: 600;
-}
-
-.hero__btn {
-  padding: 2rem 4rem;
-  background-color: #fc6e20;
-  border: none;
-}
-
-.hero__btn a {
-  padding: 1rem 2rem;
-  text-decoration: none;
   text-transform: uppercase;
-  font-family: inherit;
+  display: block;
+  margin-top: 2rem;
+}
+
+.hero__content .text .btn {
+  padding: 2rem 4rem;
+  background-color: #A32620;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 3rem;
   color: #ffffff;
-  font-weight: 800;
+  text-decoration: none;
+  font-size: 2rem;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.hero__content .text .btn:hover {
+  -webkit-transform: translateX(4px);
+          transform: translateX(4px);
+}
+
+.hero__content .text .btn:active {
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
 }
 
 .navbar {
@@ -306,8 +354,7 @@ body {
 }
 
 .hero {
-  height: 100vh;
-  background: linear-gradient(45deg, #000, transparent), url(/img/RtdV74302.jpeg);
+  background: linear-gradient(45deg, black, rgba(0, 0, 0, 0)), url(/assets/img/BrinyJarl122803-scaled.jpeg);
   background-size: cover;
   background-position: center;
   display: -webkit-box;
@@ -319,45 +366,94 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.hero__content {
+  max-width: 140rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.hero__content .img {
+  -webkit-box-flex: 10%;
+      -ms-flex: 10%;
+          flex: 10%;
+}
+
+@media only screen and (max-width: 48em) {
+  .hero__content .img {
+    display: none;
+    width: 0px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0;
+            flex: 0;
+  }
+}
+
+.hero__content .img img {
+  width: 100%;
+  visibility: hidden;
+}
+
+.hero__content .text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: 10rem 0;
 }
 
-.hero__text {
-  text-align: center;
-}
-
-.hero__text > * {
+.hero__content .text__1 {
+  font-size: 5rem;
+  font-weight: 800;
   text-transform: uppercase;
   display: block;
-  color: #ffffff;
 }
 
-.hero__text .text-1 {
-  font-size: 7rem;
+.hero__content .text__2 {
+  font-size: 2rem;
   font-weight: 800;
-}
-
-.hero__text .text-2 {
-  font-size: 5rem;
-  font-weight: 600;
-}
-
-.hero__btn {
-  padding: 2rem 4rem;
-  background-color: #fc6e20;
-  border: none;
-}
-
-.hero__btn a {
-  padding: 1rem 2rem;
-  text-decoration: none;
   text-transform: uppercase;
-  font-family: inherit;
+  display: block;
+  margin-top: 2rem;
+}
+
+.hero__content .text .btn {
+  padding: 2rem 4rem;
+  background-color: #A32620;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 3rem;
   color: #ffffff;
-  font-weight: 800;
+  text-decoration: none;
+  font-size: 2rem;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.hero__content .text .btn:hover {
+  -webkit-transform: translateX(4px);
+          transform: translateX(4px);
+}
+
+.hero__content .text .btn:active {
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
 }
 
 .navbar {
@@ -587,5 +683,21 @@ body {
   -webkit-transform: translateY(0.3rem);
           transform: translateY(0.3rem);
   border-bottom: 2px solid #fc6e20;
+}
+
+.feature {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.feature__tittle {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.feature__description {
+  font-size: 1.5rem;
+  color: #1b1b1b;
+  margin-top: 2rem;
 }
 /*# sourceMappingURL=main.css.map */
