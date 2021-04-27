@@ -1,0 +1,54 @@
+.hero{
+    height: 100vh;
+    background: linear-gradient(45deg, #000, transparent), url(/img/RtdV74302.jpeg);
+    background-size: cover;
+    background-position: center;
+
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__text{
+        text-align: center;
+
+        &>*{
+            text-transform: uppercase;
+            display: block;
+            color: $white;
+        }
+
+        .text-1{
+            font-size: 7rem;
+            
+            font-weight: 800;
+            
+            
+        }
+
+        .text-2{
+            font-size: 5rem;
+            font-weight: 600;
+           
+           
+            
+        }
+    }
+
+    &__btn{
+        padding:2rem 4rem;
+        background-color: $orange;
+        border: none;
+
+        a{
+            padding: 1rem 2rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: inherit;
+            color: $white;
+            font-weight: 800;
+        }
+    }
+}
