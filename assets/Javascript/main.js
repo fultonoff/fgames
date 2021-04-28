@@ -24,20 +24,3 @@ input.addEventListener('input', function (event) {
 })
 
 glide.mount()
-
-
-var select = document.querySelector('.glide-2')
-
-var glide = new Glide('.glide-2', {
-  type: select.value,
-  focusAt: 'center',
-  perView: 3
-})
-
-select.addEventListener('change', function (event) {
-  glide.update({
-    type: event.target.value
-  })
-})
-
-glide.mount()

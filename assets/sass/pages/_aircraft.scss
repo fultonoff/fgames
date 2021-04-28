@@ -1,0 +1,102 @@
+.hero-aircraft{
+   
+    background: url(/assets/img/41ZUS37jRo5n.png);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &__content{
+        max-width: 140rem;
+        display: flex;
+        flex-wrap:wrap;
+        margin: 0 auto;
+
+
+        .img{
+            // height: 300px;
+            // width: 300px;
+            flex: 10%;
+            @media only screen and (max-width: 48em){
+                display: none;
+                width: 0px;
+                flex: 0;
+            }
+            
+
+            img{
+                width: 100%;
+                visibility: hidden;
+                
+            
+            }
+        }
+
+        .text{
+            flex: 1;
+            color: $white;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            margin: 10rem 0;
+
+            
+            
+
+            &__1{
+                font-size: 5rem;
+                font-weight: 800;
+                text-transform: uppercase;
+                display: block;
+                
+            }
+
+            &__2{
+                font-size: 2rem;
+                font-weight: 800;
+                text-transform: uppercase;
+                display: block;
+                margin-top: 2rem;
+            }
+
+            
+        }
+    }
+
+
+
+
+}
+
+
+.welcome{
+    
+    padding: 10rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    &__tittle{
+        font-size: 4rem;
+        color: #333;
+            font-weight: 900;
+            margin-bottom: 4rem;
+
+        a{
+            text-decoration: none;
+            color: $orange;
+            border-bottom: 1px solid $red;
+
+            &:hover{
+                color: $red
+            }
+        }
+    }
+
+    p{
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+}
