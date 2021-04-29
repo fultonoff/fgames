@@ -22,8 +22,24 @@ html{
     font-size: 62.5%;
     scroll-behavior: smooth;
 
-    @media only screen and (max-width: 48em){
+    @media only screen and (max-width: 62.5em){
+        font-size: 56.25%;
+    }
 
+    @media only screen and (max-width: 56.25em){
+        font-size: 50%;
+    }
+
+    @media only screen and (max-width: 50em){
+        font-size: 43.75%;
+    }
+
+    @media only screen and (max-width: 48em){
+        font-size: 31.25%;
+    }
+
+    @media only screen and (max-width: 37.5em){
+       
     }
 }
 
