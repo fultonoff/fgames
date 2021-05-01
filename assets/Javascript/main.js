@@ -1,3 +1,5 @@
+
+
 const nav = document.querySelector('.nav__list');
 const toogle = document.querySelector('.nav__toggle');
 
@@ -24,3 +26,8 @@ input.addEventListener('input', function (event) {
 })
 
 glide.mount()
+
+
+
+
+
