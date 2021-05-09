@@ -75,10 +75,11 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        margin: 0 auto;
 
         .card {
             align-items: center;
-            margin: 2rem 4rem;
+            margin: 2rem;
             display: flex;
             flex-direction: column;
             overflow: hidden;
